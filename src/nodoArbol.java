@@ -1,19 +1,27 @@
 public class nodoArbol {
-    int dato;
-    nodoArbol iz,de;
+    String frase;
+    int r=1;
+        nodoArbol iz,de;
 
-    public nodoArbol(int d){
-        dato = d;
+    public nodoArbol(String frase) {
+        this.frase = frase;
         iz=null;
         de=null;
     }
-
-    public int getDato() {
-        return dato;
+    public String getFrase() {
+        return frase;
     }
 
-    public void setDato(int dato) {
-        this.dato = dato;
+    public int getR() {
+        return r;
+    }
+
+    public void setR(int r) {
+        this.r = r;
+    }
+
+    public void setFrase(String frase) {
+        this.frase = frase;
     }
 
     public nodoArbol getIz() {
